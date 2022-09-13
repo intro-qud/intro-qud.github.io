@@ -1,0 +1,268 @@
+/* adapted from law17.css */
+
+body {
+    background-color: #fff;
+    margin: 0;
+}
+
+body, p {
+    xfont-family: Roboto, Helvetica, Arial, sans-serif; /* screws up on non-asci letters */
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;    /*"Times New Roman", Times, serif;*/
+}
+
+table, th, td, img {
+    border: 40px;
+}
+
+.clearfix:after, #contents:after {
+    clear: both;
+    content: "";
+    height: 1%;
+    line-height: 0;
+    visibility: hidden;
+}
+
+
+/*------------------------------ HEADER ------------------------------*/
+
+#header {
+    background: linear-gradient(#002e78, #0042ab); /*rgba(25,61,255) rgba(102,126,255)*/
+    /*linear-gradient(rgba(222,119,0,0.9), rgba(255,215,0, 1));*/
+    border-bottom: 2px solid #fff;
+    color: #fff; /*#0099FF; /**/
+    padding-left: 0px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+#header .title {
+    min-width: 1000px;  /* needed to avoid nasty overlapping lines */
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    line-height: 52px;
+    color: #fff; /* #fff;*/
+    font-weight: bold;
+    padding-left: 0px;
+    padding-bottom: 5px;
+}
+
+#header .body {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    color: #fff; /* #fff;*/
+    padding-left: 0px;
+    padding-bottom: 0px;
+}
+
+#subheader {
+    background-color: #fff; /*#Ff9933 #444;*/
+    text-align: center;
+    border-style: solid;
+    border-bottom: 1px solid #002e78; /*#e6e6e6;*/
+    color: #fff;
+    height: 30px;
+      font-weight: normal;
+    padding-left: 0px;
+    padding-bottom: 20px;
+}
+
+
+/** Navigation **/
+
+#navigation {
+    display: inline-block;
+          list-style: none;
+    line-height: 20px;
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 40px;
+}
+
+#navigation ul {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navigation li {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    float: left;
+    padding-right: 30px;
+    text-align: center;
+}
+
+#navigation li a {
+    color: #002e78;
+    Font-size: 24px;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+#navigation li a:hover {
+    color: #c66f0c;
+}
+xb
+
+
+/*------------------------------ CONTENTS ------------------------------*/
+
+#contents {
+    min-height: 500px;
+    max-width: 880px;
+    margin-left: 100px;
+       border-top: 5px solid #fff; /*#e6e6e6;*/
+    padding-left: 100px;
+    padding: 25px 20px 0px 10px;
+}
+
+h1, h2, h3 {
+    color: #003892; /* 002e78 rgb(25,61,255) rgb(162, 41, 0);*/
+    color: #003892; /* rgb(162, 41, 0, ) */
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;  /*"Slabo 27px";*/
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 40px 20px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 10px 40px 18px;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: normal;
+    margin: 4 40px 14px;
+}
+
+p {
+    color: #111111;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0 40px 20px;
+}
+
+a {
+    font-weight: bold;
+    color: #39646d;
+}
+
+a.paper {
+    font-weight: normal;
+    color: #39646d;
+    text-decoration: None;
+}
+
+a:hover { color: #de7d0e; } /* #39646d */
+a:visited { color: #39646d; }
+
+table.dates {
+    margin-left: 20px;
+    border-collapse: collapse;
+        margin: 0 40px 20px;
+}
+
+table.dates td {
+    padding: 7px;
+    border: 1px solid #006699;
+    font-size: 18px;
+}
+
+table.committee a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+li {
+    color: #111111;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.left { text-align: left; }
+.right { text-align: right; }
+.center {
+    text-align: center;
+    color: #39646d;
+    font-weight: bold;
+}
+
+.indent { margin-left: 20px; }
+
+.p_name { width: 200px; font-size: 18px; }
+.p_affiliation { padding-left: 20px; font-size: 18px; }
+
+.example {
+    color: #39646d;
+}
+
+.sidebar {
+    width: 400px;
+    padding-top: 25px;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+
+.sidebar div {
+    padding-left: 20px;
+    border-left: 3px solid #e6e6e6;
+}
+
+.sidebar table {
+    margin-left: 20px;
+    border-collapse: collapse;
+}
+
+.sidebar td {
+    padding: 5px;
+    border: 1px solid #006699;
+    font-size: 18px;
+}
+
+.sidebar p {
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.sidebar h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+
+/*------------------------------ FOOTER ------------------------------*/
+
+#footer {
+    /*law17:  color matches color from the logo */
+    background: linear-gradient(#003892, #0042ab); /* #002e78, */
+    /*background: linear-gradient(rgba(25,61,255), rgba(102,126,255)); linear-gradient(rgba(255,215,0, 1), rgba(255,215,0, 1));*/
+    xborder-top: 4px solid #999;
+    border-top: 2px solid #fff ; /*rgba(255,215,0, 1);*/
+    Border-bottom: 4px solid #fff;
+    Xborder-bottom: 4px solid rgba(255,215,0, 1);
+    padding: 6px 0 0;
+}
+
+#footer > div {
+    height: 20px;
+    padding: 10px 10px 10px 40px;
+}
+
+#footer p {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 18px;
+    color: #fff; /* #fff;*/
+    font-style: normal;
+    padding-left: 10px;
+}
+
+#footer p a {
+    color: #fff; /* #fff;*/
+    font-weight: bold;
+}
